@@ -1,12 +1,13 @@
 # LexicalAnalysisz
-    DESCRIPTION
+# DESCRIPTION
 
 The language I chose consists of a finite one about some specific words that are:
-certhans
-cirth
-coire
-coranar
-cormallen
+
+    certhans
+    cirth
+    coire
+    coranar
+    cormallen
 
 The objective of this lexical analyzer is to determine a given input string belongs to this languague or not.
 For this problem can be modeled using a finite automata, which are models used to recognize patterns in strings the Finite Automata that I chose was a DFA
