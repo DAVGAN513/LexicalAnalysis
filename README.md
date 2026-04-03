@@ -14,7 +14,7 @@ For this problem can be modeled using a finite automata, which are models used t
 I chose the DFA because esch input symbol leads to exactly one state, for that helps to making it predictable,efficient, and also easy to implement for a finite set of known words.
 So for this problem that have the language that only consists of five valid words, the DFA is sufficient to represent all valid transitions without ambiguity. 
 
-    MODELS
+# MODELS
 
 The alphabet used in this language is: 
 
@@ -25,7 +25,7 @@ Any character outside this alphabet is rejected, so the DFA was designed that ea
 <img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/37eda190-a3ee-454e-830b-82fa570dda4c" />
 
 
-    IMPLEMENTATION
+# IMPLEMENTATION
 
 For my implementation of the lexical analysis it was made in python, i used the "re" library to work with regular expressions this helps to match patterns in strings and follow a complex map, so for this is like each input string is processed character by character following a deterministic path defined by the pattern wivh ensure efficience.
 Also the program is based on a regular expression that represent all the valid words in the language and its defined as: 
@@ -55,7 +55,7 @@ EXAMPLES OF THE INPUTS AND OUTPUTS ARE:
 
 For this results confirm that the analyzer correctly identifies valid words from the language and rejects the invalid ones
 
-    ANALYSIS
+# ANALYSIS
 
 
 
@@ -63,7 +63,7 @@ The complexity of this model is O(n) where the n is yhe length of the string to 
 for any input string of length n, the engine starts at the initial state, for each character in the string it moves to exactly one next state.
 I used the python´s "re" library this one helps to compiles the expression into highly optimized transition table and is used to match patterns in strings and follow a complex map.
 
-REFERENCES 
+# REFERENCES 
 https://www.cs.rochester.edu/u/nelson/courses/csc_173/fa/fa.html
 https://www.geeksforgeeks.org/python/python-regex/
 
