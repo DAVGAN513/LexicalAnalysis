@@ -34,9 +34,13 @@ Also the program is based on a regular expression that represent all the valid w
     expression = r"^c(erthans|irth|o(ire|r(anar|mallen)))$"
 
 On this expression help to the pattern to ensure this: 
+
 1- The string only can start with the character "c"
+
 2- It must continue with one of the valid sequences: erthans, irth, oire, oranar, ormallen
+
 3- Now for the symbol of "^" and "$" helps to to the start and end, enforcing that the entire string must match exactly, preventing an extra or missing character.
+
 Also on the program theres some words to test them with teh list of strings defined:
 
     words = ["certhans", "cirth", "coire", "coranar", "cor", "cirtha", "cormallen"]
