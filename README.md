@@ -9,7 +9,7 @@ The language I chose consists of a finite one about some specific words that are
     coranar
     cormallen
 
-The objective of this lexical analyzer is to determine a given input string belongs to this languague or not.
+The objective of this lexical analyzer is to determine a given input string belongs to this language or not.
 For this problem can be modeled using a finite automata, which are models used to recognize patterns in strings the Finite Automata that I chose was a DFA
 I chose the DFA because esch input symbol leads to exactly one state, for that helps to making it predictable,efficient, and also easy to implement for a finite set of known words.
 So for this problem that have the language that only consists of five valid words, the DFA is sufficient to represent all valid transitions without ambiguity. 
@@ -27,7 +27,7 @@ Any character outside this alphabet is rejected, so the DFA was designed that ea
 
 # IMPLEMENTATION
 
-For my implementation of the lexical analysis it was made in python, i used the "re" library to work with regular expressions this helps to match patterns in strings and follow a complex map, so for this is like each input string is processed character by character following a deterministic path defined by the pattern wivh ensure efficience.
+For my implementation of the lexical analysis it was made in python, i used the "re" library to work with regular expressions this helps to match patterns in strings and follow a complex map, so for this is like each input string is processed character by character following a deterministic path defined by the pattern wich ensure efficience.
 Also the program is based on a regular expression that represent all the valid words in the language and its defined as: 
 
 
@@ -61,11 +61,13 @@ For this results confirm that the analyzer correctly identifies valid words from
 
 # ANALYSIS
 
-The tine Complexity for this implementation is O(n) where where the n is yhe length of the string to be processed.
+The time Complexity for this implementation is O(n) where where the n is yhe length of the string to be processed.
 for any input string of length n, the engine starts at the initial state, for each character in the string it moves to exactly one next state. Also the program processes each character once, making it more efficient and scalable 
 
-And now i´m going to explain why I chose the DFA because the language consists of a finite set of predefined words where each input followa an unique and well defined path. So for this compared to an NFA the DFA is simpler to implement and more efficient for this type of problems, besides a NFA would introduce unnecesary complexity and to be converted into a DFA.
+And now i´m going to explain why I chose the DFA because the language consists of a finite set of predefined words where each input followa an unique and well defined path. So for this compared to an NFA the DFA is simpler to implement and more efficient for this type of problems, besides a NFA would introduce unnecesary complexity and to be converted into a DFA. 
 
 # REFERENCES 
-https://www.cs.rochester.edu/u/nelson/courses/csc_173/fa/fa.html
-https://www.geeksforgeeks.org/python/python-regex/
+Finite automata. (n.d.). https://www.cs.rochester.edu/u/nelson/courses/csc_173/fa/fa.html
+
+GeeksforGeeks. (2025, July 10). Python RegEx. GeeksforGeeks. https://www.geeksforgeeks.org/python/python-regex/
+
