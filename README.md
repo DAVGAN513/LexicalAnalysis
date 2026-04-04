@@ -61,13 +61,11 @@ For this results confirm that the analyzer correctly identifies valid words from
 
 # ANALYSIS
 
+The tine Complexity for this implementation is O(n) where where the n is yhe length of the string to be processed.
+for any input string of length n, the engine starts at the initial state, for each character in the string it moves to exactly one next state. Also the program processes each character once, making it more efficient and scalable 
 
-
-The complexity of this model is O(n) where the n is yhe length of the string to be processed.
-for any input string of length n, the engine starts at the initial state, for each character in the string it moves to exactly one next state.
-I used the python´s "re" library this one helps to compiles the expression into highly optimized transition table and is used to match patterns in strings and follow a complex map.
+And now i´m going to explain why I chose the DFA because the language consists of a finite set of predefined words where each input followa an unique and well defined path. So for this compared to an NFA the DFA is simpler to implement and more efficient for this type of problems, besides a NFA would introduce unnecesary complexity and to be converted into a DFA.
 
 # REFERENCES 
 https://www.cs.rochester.edu/u/nelson/courses/csc_173/fa/fa.html
 https://www.geeksforgeeks.org/python/python-regex/
-
